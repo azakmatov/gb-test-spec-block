@@ -1,0 +1,26 @@
+version: '3.9'
+
+services:
+  mysql-workbench:
+    image: lscr.io/linuxserver/mysql-workbench:latest
+    restart: always
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    environment:
+      CUSTOM_USER: root
+      PASSWORD: 1
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 1
+      MYSQL_DATABASE: human_friends
+    ports:
+      - "3806:3306"
+    volumes:
+      - ./docker_db:/var/lib/mysql
+

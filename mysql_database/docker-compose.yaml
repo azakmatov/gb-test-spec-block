@@ -1,17 +1,13 @@
 version: '3.9'
 
 services:
-  mysql-workbench:
-    image: lscr.io/linuxserver/mysql-workbench:latest
+  adminer:
+    image: adminer
     restart: always
-    ports:
-      - "3000:3000"
-      - "3001:3001"
     environment:
-      CUSTOM_USER: root
-      PASSWORD: 1
-    depends_on:
-      - mysql
+      ADMINER_DEFAULT_SERVER: mysql
+    ports:
+      - "80:8080"
 
   mysql:
     image: mysql:latest
