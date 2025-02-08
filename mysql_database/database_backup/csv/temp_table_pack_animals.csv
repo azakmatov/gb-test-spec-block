@@ -1,0 +1,9 @@
+"id";"name";"id_type_animals";"birthdate";"commands"
+1;Sandy;Camel;"2016-11-03";Walk, Carry Load
+2;Dune;Camel;"2018-12-12";Walk, Sit
+3;Sahara;Camel;"2015-08-14";Walk, Run
+4;Eeyore;Donkey;"2017-09-18";Walk, Carry Load, Bray
+5;Burro;Donkey;"2019-01-23";Walk, Bray, Kick
+6;Thunder;Horse;"2015-07-21";Trot, Canter, Gallop
+7;Storm;Horse;"2014-05-05";Trot, Canter
+8;Blaze;Horse;"2016-02-29";Trot, Jump, Gallop
