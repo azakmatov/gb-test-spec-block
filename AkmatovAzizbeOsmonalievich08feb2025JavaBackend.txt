@@ -1,0 +1,1000 @@
+  230  ll
+  231  cat test3.txt 
+  232  mv test3.txt dz1.txt
+  233  ll
+  234  mkdir dz
+  235  mv * dz/
+  236  ll
+  237  ll dz/
+  238  cp dz/dz1.txt file2.txt
+  239  mv dz/dz1.txt file1.txt
+  240  cd dz
+  241  ll
+  242  cd ..
+  243  ll
+  244  ln -s file1.txt file1_lns.txt
+  245  ll
+  246  mv file1_lns.txt file3_file1tolns.txt 
+  247  ll
+  248  ln file1.txt file4_file1tolns.txt
+  249  ll
+  250  ls -ali
+  251  ll
+  252  mv file1 ok1.txt
+  253  mv file1.txt ok1.txt
+  254  mv file2.txt ok2.txt
+  255  mv file3_file1tolns.txt ok3.txt
+  256  mv file4_file1tolns.txt ok4.txt
+  257  ll
+  258  ln -s ok1.txt OK35.txt
+  259  ll
+  260  mv ok3*.txt ../
+  261  mv ok4.txt ../
+  262  ../
+  263  ll
+  264  cd dz
+  265  ll
+  266  ll ../
+  267  pwd
+  268  ll
+  269  cd ..
+  270  ll
+  271  ll test/dz/
+  272  ll dz/
+  273  cd ..
+  274  ll
+  275  mv ok*.txt test/
+  276  ll
+  277  cd test
+  278  ll
+  279  history
+  280  cat > dz history
+  281  cat > dz.txt history
+  282  history | cat > dz.txt
+  283  ll
+  284  cat dz.txt 
+  285  umask
+  286  cat /etc/passwd | grep test
+  287  su test
+  288  cat /etc/passwd | grep test
+  289  ll /home/
+  290  cat /etc/passwd | grep test
+  291  sudo su
+  292  su root
+  293  exit
+  294  su root
+  295  sudo addgroup test100
+  296  sudo groupadd test200
+  297  sudo groupdel test200
+  298  su test2
+  299  cd test
+  300  ll
+  301  mkdir dz2
+  302  ll
+  303  cd dz2
+  304  ll
+  305  cat > test1
+  306  cat > test2
+  307  ll
+  308  sudo chmod u=rw,g=rw,o=r test1
+  309  ll
+  310  sudo chmod u=rw,g=,o= test2 
+  311  ll
+  312  chmod 664 test1
+  313  chmod 600 test2
+  314  ll
+  315  cat /etc/passwd | grep test
+  316  sudo useradd -s /bin/bash test1
+  317  sudo adduser test2
+  318  sudo userdel test3
+  319  ll
+  320  cat /etc/group | grep test
+  321  sudo usermod -g sambashare test4
+  322  sudo usermod -aG www-data test4
+  323  sudo visudo
+  324  ll
+  325  mkdir dir1
+  326  ll
+  327  sudo chgrp www-data testd
+  328  sudo chgrp www-data dir1
+  329  ll
+  330  sudo chmod g+s dir1
+  331  touch dir1/file1.txt
+  332  ll dir1/
+  333  ll
+  334  mkdir dir2
+  335  chmod 777 dir2
+  336  ll
+  337  rm -R dir2/
+  338  ll
+  339  mkdir dir1/dir2
+  340  chmod 777 dir1/dir2/
+  341  ll dir1/dir2/
+  342  ll dir1/
+  343  chmod g+s dir1/dir2/
+  344  ll dir1/
+  345  ll
+  346  sudo chmod g+s dir1/dir2/
+  347  ll dir1/
+  348  sudo chmod +t dir1/dir2/
+  349  ll dir1/
+  350  mkdir dir3
+  351  ll
+  352  chmod a-r dir3
+  353  ll
+  354  touch dir3/iceberg.txt
+  355  ls dir3/
+  356  cat dir3/iceberg.txt
+  357  cat > dir3/iceberg.txt
+  358  cat dir3/iceberg.txt
+  359  ls dir3/
+  360  su test2
+  361  su test1
+  362  sudo
+  363  sudo su
+  364  sudo chgroup
+  365  visudo
+  366  su test1
+  367  sudo visudo
+  368  su test1
+  369  ll
+  370  cd test
+  371  ll
+  372  mkdir dz
+  373  cd dz
+  374  cat > file1.txt
+  375  ll
+  376  cat > file2.txt
+  377  ll
+  378  chmod 664 file1.txt 
+  379  ll
+  380  chmod 600 file2.txt 
+  381  ll
+  382  chmod u=rw,g=rw,o=r file1.txt 
+  383  ll
+  384  chmod 777 file2.txt 
+  385  ll
+  386  chmod u=rw,g=0,o=0 file2.txt 
+  387  chmod u=rw,g=,o= file2.txt 
+  388  ll
+  389  mkdir dir1
+  390  mv file* dir1/
+  391  ll
+  392  ll dir1/
+  393  cat /etc/passwd | grep test
+  394  chown -R test:test dir1/
+  395  ll
+  396  sudo su
+  397  history
+  398  tail 200 | history
+  399  history | tail 200
+  400  cat > 1.xlsx | history
+  401  id
+  402  ll
+  403  history 5
+  404  cat > 1.pdf history 200
+  405  cat > 1.pdf | history 200
+  406  cat > 1.txt | history 200
+  407  history 200 > 1.txt
+  408  sudo su
+  409  test
+  410  crontab
+  411  crontab -l
+  412  crontab -e
+  413  crontab -l
+  414  crontab -r
+  415  crontab -l
+  416  crontab -e
+  417  nano /etc/aliases
+  418  hwclock --systohc 
+  419  curl localhost
+  420  ll
+  421  cd test
+  422  ll
+  423  mkdir dz3
+  424  cd dz3
+  425  ll
+  426  nano test.txt
+  427  ll
+  428  cron -e
+  429  crontab -e
+  430  cd
+  431  crontab -r
+  432  crontab -e
+  433  man mkdir
+  434  that is right > test/dz3/test.txt
+  435  that is right cat  > test/dz3/test.txt
+  436  echo 'That is right!  > test/dz3/test.txt
+  437  ;
+  438  echo 'That is right!'  > test/dz3/test.txt
+  439  echo 'That is right!'  > test/dz3/test1.txt
+  440  crontab -e
+  441  man mkdir
+  442  sudo ll /home/
+  443  sudo ls /home/
+  444  sudo mkdir -m a=rwx /home/backup
+  445  sudo ls /home/
+  446  sudo ls -ali /home/
+  447  sudo rm -R /home/backup/
+  448  sudo ls -ali /home/
+  449  echo 'That is right!'  > test/dz3/test/test1.txt
+  450  cd test/dz3/
+  451  ll
+  452  mkdir test && echo 'That is right!'  > test/test1.txt
+  453  ll
+  454  ll test
+  455  ll /var/backups/
+  456  ll /var/
+  457  crontab -e
+  458  ip a
+  459  ip r
+  460  ss -ntlp
+  461  sudo ss -ntlp
+  462  sudo ss -ntulp
+  463  ss tulpan
+  464  ss -tulpan
+  465  sudo ss -tulpan
+  466  ll /etc/netplan/
+  467  nano /etc/netplan/01-network-manager-all.yaml 
+  468  crontab -r
+  469  crontab -e
+  470  resolvectl dns
+  471  cat /etc/hosts
+  472  host -t a ya.ru
+  473  host -t a ya.ru 8.8.8.8
+  474  host -t a ya.ru
+  475  dig @8.8.8.8 google.com
+  476  tracepath ya.ru
+  477  traceroute ya.ru
+  478  tracepath ya.ru
+  479  mtr ya.ru
+  480  resolvectl dns
+  481  man resolvectl 
+  482  resolvectl 8.8.8.8
+  483  resolvectl dns
+  484  resolvectl dhcp
+  485  resolvectl dns
+  486  sudo ls /etc/tables/
+  487  sudo ls /etc/iptables/
+  488  ip a
+  489  ip r
+  490  ip a
+  491  ip -c a
+  492  ip -s a
+  493  ip -s -c a
+  494  ip -c a
+  495  ip -s -c a
+  496  ip -c a
+  497  ip link
+  498  ip -c link
+  499  netplan try
+  500  curl localhost
+  501  nano /var/www/
+  502  ll /var/www/
+  503  ll /var/www/html/
+  504  nano /var/www/html/index.nginx-debian.html 
+  505  sudo su
+  506  mysql
+  507  sudo mysql
+  508  su root
+  509  sudo su
+  510  ss -ntlp
+  511  sudo ss -ntlp
+  512  sudo su
+  513  ss -ntlp
+  514  ss -ntlp | grep 81
+  515  ping developer
+  516  sudo su
+  517  exit
+  518  exit
+  519  echo $?
+  520  cd test/
+  521  ls -al && echo "Sexy!"
+  522  ls -al || echo "I want to fucking you!"
+  523  ls -al && echo "I want to fucking you!"
+  524  ls
+  525  cd ..
+  526  ls
+  527  echo $?
+  528  cat /etc/shadow
+  529  echo $?
+  530  cat /etc/passwd
+  531  echo $?
+  532  cat /etc/shadow || echo "I want to fucking you!"
+  533  cat /etc/shadow && echo "I want to fucking you!"
+  534  cat /etc/passwd && echo "I want to fucking you!"
+  535  cat /etc/lsb-release 
+  536  cat /etc/lsb-release /etc/shadow
+  537  cd test/
+  538  ll
+  539  mkdir test
+  540  cd test
+  541  ll
+  542  clear
+  543  cat /etc/lsb-release /etc/shadow 2> err.txt
+  544  ll
+  545  cat err.txt 
+  546  cat /etc/shadow /etc/lsb-release 2> err.txt
+  547  cat err.txt 
+  548  rm err.txt 
+  549  ll
+  550  cat /etc/shadow /etc/lsb-release 2> err.txt
+  551  cat err.txt 
+  552  clear
+  553  cat /etc/shadow /etc/lsb-release 2>> err.txt
+  554  cat err.txt 
+  555  cat /etc/shadow /etc/lsb-release 2> err.txt > std.txt
+  556  ll
+  557  cat std.txt 
+  558  cat err.txt 
+  559  clear
+  560  cat /etc/lsb-release /etc/shadow > all.txt 2>&1
+  561  ll
+  562  cat all.txt 
+  563  cat /etc/lsb-release /etc/shadow > all.txt
+  564  cat /etc/lsb-release /etc/shadow >> all.txt
+  565  cat all.txt 
+  566  cat /etc/lsb-release /etc/shadow > all.txt 2>&1
+  567  cat all.txt 
+  568  cat /var/log/syslog | grep 'mysql' | grep -v 'file' | wc -l
+  569  cat /var/log/syslog | grep 'mysql' | grep -v 'file'
+  570  cat /var/log/syslog | grep 'mysql'
+  571  cat /var/log/syslog
+  572  cat /var/log/syslog | grep 'mysql'
+  573  cat syslog
+  574  cat /var/log/syslog | grep error | grep -v kernel | grep -i 'sqlite' | wc -l
+  575  cat /var/log/syslog | grep error | grep -v kernel | grep -i 'sqlite' 
+  576  cat /var/log/syslog | grep error | grep -v kernel
+  577  cat /var/log/syslog | grep error | grep -v kernel | wc -l
+  578  ls -a /var/log/ | sort
+  579  ls -a /var/log/ | sort | wc -l
+  580  df -h
+  581  df -h | grep '/dev/sda'
+  582  printenv
+  583  printenv | wc -l
+  584  echo $PWD
+  585  printenv | grep -i pwd
+  586  printenv | grep pwd
+  587  printenv | grep -i 'pwd'
+  588  echo _
+  589  echo $_
+  590  echo $OLDPWD
+  591  echo ~-
+  592  echo $~-
+  593  echo $OLD_PWD
+  594  echo $OLDPWD
+  595  cd test/
+  596  echo $OLDPWD
+  597  echo $PWD
+  598  echo $PATH
+  599  ll
+  600  cat > testscript
+  601  nano testscript 
+  602  ./testscipt
+  603  ll
+  604  chmod +s testscript 
+  605  ./testscript
+  606  ll
+  607  chmod -s testscript 
+  608  chmod +x testscript 
+  609  ll
+  610  ./testscript 
+  611  nano testscript 
+  612  ./testscript 
+  613  nano testscript 
+  614  cd 
+  615  ./test/testscript 
+  616  cd test/
+  617  ./testscript /etc/
+  618  ./testscript /etc
+  619  ./testscript /home/iceberg
+  620  ./testscript /home/iceberg/
+  621  ./testscript .
+  622  ./testscript ./
+  623  ./testscript ../
+  624  /home/iceberg/test/testscript 
+  625  chmod -x testscript 
+  626  ll
+  627  bash testscript 
+  628  /home/iceberg/test/testscript 
+  629  /home/iceberg/test/testscript /etc/
+  630  bash testscript /etc/
+  631  ls -al /bin/bash
+  632  sudo su
+  633  echo -e file_name
+  634  if [ -e file_name ] then echo "true" else echo 'false' fi; ;
+  635  if [ -e file_name ] then echo "true" else echo 'false' fi; ;
+  636  if [ -e file_name ] then echo "true" else echo "false" fi; ;
+  637  man test
+  638  nano testscript 
+  639  ll
+  640  chmod +x testscript 
+  641  ./testscript 
+  642  nano testscript 
+  643  ./testscript 
+  644  ./testscript dfsafas
+  645  nano testscript 
+  646  ./testscript dfsafas
+  647  $?
+  648  echo $?
+  649  ./testscript dfsafas
+  650  echo $?
+  651  ./testscript /home/iceberg/
+  652  echo $?
+  653  ll
+  654  mkdir cycles
+  655  cd cycles/
+  656  featherpad forWhile
+  657  ll
+  658  chmod +x forWhile 
+  659  ./forWhile 
+  660  featherpad forWhile
+  661  ./forWhile 
+  662  type ls
+  663  ls --color=auto
+  664  ls
+  665  type -a ls
+  666  which ls
+  667  /bin/ls
+  668  ls
+  669  /bin/ls color=auto
+  670  ls color=auto
+  671  /bin/ls --color=auto
+  672  ls
+  673  type cd
+  674  type -a cd
+  675  type rm
+  676  type -a rm
+  677  which rm
+  678  type for
+  679  type -a for
+  680  type while
+  681  nano ~/.bashrc 
+  682  featherpad ~/.bashrc 
+  683  featherpad ~/.profile 
+  684  type -a grep
+  685  type ll
+  686  ls -alF
+  687  ll
+  688  man ls
+  689  la
+  690  ls -A
+  691  ll /dev/null 
+  692  grep '^test' testfile
+  693  var_ls=$(ls -al)
+  694  echo $var_ls
+  695  echo `ls -al`
+  696  `ls -al`
+  697  $var_ls 
+  698  echo $0
+  699  echo $1
+  700  cd ..
+  701  ll
+  702  featherpad testscript 
+  703  ./testscript 
+  704  featherpad testscript 
+  705  ./testscript 
+  706  featherpad testscript 
+  707  ./testscript 
+  708  ./testscript ~
+  709  ll
+  710  for i in $(ls); do echo $i; done
+  711  ls
+  712  ls -l
+  713  for i in $(ls); do echo $i; done
+  714  ll
+  715  sh testscript
+  716  sh testscript /home/
+  717  sh testscript .
+  718  sh testscript ..
+  719  featherpad testscript 
+  720  sh testscript .
+  721  sh testscript ..
+  722  featherpad testscript 
+  723  sh testscript /home/iceberg/test/
+  724  featherpad testscript 
+  725  sh testscript ..
+  726  sh testscript .
+  727  nano dirclean
+  728  mkdir clean
+  729  touch 1.bak
+  730  touch clean/2.tmp
+  731  touch clean/3.backup
+  732  mv 1.bak clean/
+  733  ll clean/
+  734  bash clean/
+  735  nano dirclean
+  736  ll clean/
+  737  bash dirclean clean/
+  738  ll clean/
+  739  featherpad dirclean 
+  740  ll
+  741  mv dirclean ownerDir
+  742  ll
+  743  mv ownerDir dirClean
+  744  ll
+  745  mv clean/ ownerDir
+  746  ll
+  747  cd ownerDir/
+  748  ll
+  749  touch iceberg
+  750  ll
+  751  touch test
+  752  touch oper
+  753  touch proger
+  754  ll
+  755  chown oper:oper oper 
+  756  sudo su
+  757  ll
+  758  nano /etc/passwd
+  759  rm *
+  760  ll
+  761  touch daemon
+  762  touch games
+  763  touch mail
+  764  ll
+  765  chown daemon:daemon daemon 
+  766  sudo su
+  767  ll ../
+  768  sudo su
+  769  featherpad ownerSort.sh
+  770  ll
+  771  bash ownerSort.sh 
+  772  ll
+  773  ll iceberg/
+  774  rm -r iceberg/
+  775  touch iceberg
+  776  ll
+  777  bash ownerSort.sh 
+  778  mv daemon d
+  779  mv games g
+  780  mv mail m
+  781  mv iceberg i
+  782  ll
+  783  bash ownerSort.sh 
+  784  ll
+  785  ll daemon/
+  786  ll games/
+  787  ll iceberg/
+  788  ll mail/
+  789  featherpad ownerSort.sh 
+  790  ll
+  791  ll ../
+  792  featherpad ../dirClean 
+  793  featherpad ownerSort.sh 
+  794  chmod +x ownerSort.sh
+  795  ./ownerSort.sh 
+  796  ll
+  797  tree 
+  798  ./ownerSort.sh 
+  799  ping 10.0.0.2
+  800  exit
+  801  ll
+  802  cd gbToChroot/
+  803  ll
+  804  mkdir toNewPid
+  805  cd toNewPid/
+  806  featherpad makeNewPid.c
+  807  gcc makeNewPid.c -o makeNewPid.sh
+  808  ll
+  809  featherpad makeNewPid.sh 
+  810  cat makeNewPid.sh 
+  811  ll
+  812  ./makeNewPid.sh 
+  813  featherpad makeNewPid.c
+  814  gcc makeNewPid.c -o makeNewPid.sh
+  815  ./makeNewPid.sh 
+  816  $?
+  817  ./makeNewPid.sh 
+  818  $?
+  819  ps aux
+  820  ./makeNewPid.sh 
+  821  ps aux
+  822  ./makeNewPid.sh 
+  823  featherpad makeNewPid.c
+  824  cp makeNewPid.c pidOfParent.c
+  825  gcc pidOfParent.c -o pidOfParent.sh
+  826  ./pidOfParent.sh 
+  827  featherpad pidOfParent.c
+  828  gcc pidOfParent.c -o pidOfParent.sh
+  829  ./pidOfParent.sh 
+  830  ps aux
+  831  ps aux | grep 5917
+  832  featherpad pidOfParent.c
+  833  cp makeNewPid.c makeNewNet.c
+  834  featherpad makeNewNet.c 
+  835  gcc makeNewNet.c -o makeNewNet.sh
+  836  ./makeNewNet.sh 
+  837  featherpad makeNewNet.c 
+  838  gcc makeNewNet.c -o makeNewNet.sh
+  839  ./makeNewNet.sh 
+  840  strace ./makeNewNet.sh 
+  841  ll
+  842  cp makeNewNet.c otherNameSpaces.c
+  843  featherpad otherNameSpaces.c 
+  844  gcc otherNameSpaces.c -o otherNameSpaces.sh
+  845  ./otherNameSpaces.sh 
+  846  featherpad otherNameSpaces.c 
+  847  featherpad test.c
+  848  gcc test.c -o test.sh
+  849  featherpad test.c
+  850  gcc test.c -o test.sh
+  851  ./test.sh 
+  852  featherpad test.
+  853  featherpad test.c
+  854  ldd ls
+  855  which ls
+  856  ldd /usr/bin/ls
+  857  cd ../..
+  858  ll
+  859  ll gbToChroot/
+  860  ldd /usr/bin/ls
+  861  cp /lib/x86_64-linux-gnu/libselinux.so.1 gbToChroot/lib
+  862  sudo su
+  863  exit
+  864  sudo -s
+  865  exit
+  866  sudo su
+  867  ping 10.0.12.2
+  868  sudo su
+  869  ip a
+  870  sudo su
+  871  ip a
+  872  sudo su
+  873  ip a
+  874  sudo su
+  875  ip a
+  876  sudo su
+  877  ip a
+  878  sudo su
+  879  sudo sut
+  880  sudo su
+  881  ip a
+  882  sudo su
+  883  lxc-ls -f
+  884  sudo su
+  885  exit
+  886  exit
+  887  sudo su
+  888  vim .vimrc
+  889  cat .vimrc 
+  890  vimtutor 
+  891  sudo su1
+  892  sudo su
+  893  vimtutor 
+  894  cd test/
+  895  ll
+  896  mkdir vim
+  897  cd vim/
+  898  vimtutor 
+  899  ifconfig
+  900  ip a
+  901  exit
+  902  ping 10.64.114.14
+  903  sudo su
+  904  ping 10.64.114.14
+  905  cd 1
+  906  ll
+  907  chmod +x netConfigurator-TABLO.jar 
+  908  java netConfigurator-TABLO.jar 
+  909  sudo su
+  910  shell
+  911  sh
+  912  ll
+  913  exit
+  914  cd 1
+  915  ll
+  916  javac netConfigurator-TABLO.jar 
+  917  sudo su
+  918  ll
+  919  exit
+  920  sudo su
+  921  ss -ntlp
+  922  sudo su
+  923  exit
+  924  sudo su
+  925  sudo su
+  926  exit
+  927  sudo su
+  928  exit
+  929  sudo su
+  930  exit
+  931  sudo su
+  932  df -dh
+  933  dh -df
+  934  df -h
+  935  sudo su
+  936  exit
+  937  sudo su
+  938  sudo su
+  939  exit
+  940  sudo su
+  941  sudo su
+  942  exit
+  943  exit
+  944  sudo su
+  945  exit
+  946  sudo su
+  947  exit
+  948  sudo su
+  949  exit
+  950  cd 1/5/hw/prod/
+  951  sudo su
+  952  exit
+  953  sudo su
+  954  exit
+  955  sudo su
+  956  exit
+  957  sudo su
+  958  exit
+  959  sudo su
+  960  gnome-screenshot 
+  961  ss -ntlp
+  962  sudo su
+  963  exit
+  964  sudo su
+  965  exit
+  966  ss -ntlp
+  967  sudo su
+  968  systemctl status mongod
+  969  systemctl status mongo
+  970  systemctl status mongodb
+  971  systemctl stop mongod
+  972  sudo su
+  973  sudos u
+  974  sudos su
+  975  sudo su
+  976  exit
+  977  sudo su
+  978  exit
+  979  exit
+  980  ping mongo
+  981  sudo su
+  982  sudo su
+  983  exit
+  984  exit
+  985  sudo su
+  986  sudos u
+  987  1
+  988  sudo su
+  989  cd .ssh/
+  990  ll
+  991  cd ..
+  992  rm -r .ssh/
+  993  ssh-keygen -t ed25519 -C "azakmatov@gmail.com"
+  994  ls -la .ssh/
+  995  cat .ssh/id_ed25519.pub 
+  996  rm -r .ssh/
+  997  ssh-keygen -t rsa -b 4096 -b -C "azakmatov@gmail.com"
+  998  ssh-keygen -t rsa -b 4096 -C "azakmatov@gmail.com"
+  999  cat .ssh/id_rsa.pub 
+ 1000  vi .ssh/id_rsa.pub 
+ 1001  ssh -T git@github.com
+ 1002  cat /home/iceberg/.ssh/id_rsa.pub 
+ 1003  ll .ssh/
+ 1004  mkdir /home/iceberg/snap/gh/502/.ssh/
+ 1005  ll /home/iceberg/snap/gh/502/.ssh/
+ 1006  cat /home/iceberg/snap/gh/502/.ssh/id_ed25519.pub 
+ 1007  vi .ssh/token.git
+ 1008  sudos u
+ 1009  sudo su
+ 1010  exit
+ 1011  cd docker/sources\ of\ images/azakmatov/itlogia-im-backend-edu/
+ 1012  git init
+ 1013  git config --global init.defaultBranch main
+ 1014  git init
+ 1015  git add README.md
+ 1016  ll
+ 1017  cd 1.0.1/
+ 1018  git init
+ 1019  ll
+ 1020  sudo chown iceberg:iceberg -R ../../itlogia-im-backend-edu/
+ 1021  git init
+ 1022  rm -r ../.git/
+ 1023  rm -r .git/
+ 1024  git init
+ 1025  ll
+ 1026  echo ".git" > .gitignore
+ 1027  echo "node_modules" >> .gitignore
+ 1028  ls -la
+ 1029  git status
+ 1030  cat .gitignore 
+ 1031  vi .gitignore 
+ 1032  git add .
+ 1033  git status
+ 1034  git commit -m "Initial commit"
+ 1035  git config -g user.email "azakmatov@gmail.com"
+ 1036  git config --global user.email "azakmatov@gmail.com"
+ 1037  git config --global user.name "Azizbek Akmatov"
+ 1038  git commit -m "Initial commit"
+ 1039  git status
+ 1040  echo ".gitignore" >> .gitignore
+ 1041  git status
+ 1042  git commit -m "Initial commit"
+ 1043  git add .
+ 1044  git commit -m "Initial commit"
+ 1045  git status
+ 1046  git branch --help
+ 1047  git remote add origin https://github.com/azakmatov/itlogia-im-backend-edu.git
+ 1048  git push -u origin main
+ 1049  git remote add origin https://github.com/azakmatov/itlogia-im-backend-edu.git
+ 1050  git branch -M main
+ 1051  git push -u origin main
+ 1052  ssh-keygen -t rsa
+ 1053  car /home/iceberg/.ssh/
+ 1054  car /home/iceberg/.ssh/id_rsa
+ 1055  cat /home/iceberg/.ssh/id_rsa
+ 1056  cat /home/iceberg/.ssh/id_rsa.pub 
+ 1057  git push -u origin main
+ 1058  git remote rm origin
+ 1059  git remote add origin git@github.com:azakmatov/itlogia-im-backend-edu.git
+ 1060  git push -u origin main
+ 1061  git status
+ 1062  git add .
+ 1063  git status
+ 1064  git commit -m ".gitignore"
+ 1065  git status
+ 1066  git push
+ 1067  ll ../
+ 1068  ls -la ../
+ 1069  ls -la ../../
+ 1070  rm .git
+ 1071  rm -r .git
+ 1072  rm -rf .git
+ 1073  ls
+ 1074  ls -la
+ 1075  git init
+ 1076  git remote add origin git@github.com:azakmatov/itlogia-im-backend-edu.git
+ 1077  git status
+ 1078  git add .
+ 1079  git status
+ 1080  git commit -m "Initial commit"
+ 1081  git status
+ 1082  git push
+ 1083  git push -u origin main
+ 1084  git push --set-upstream origin main
+ 1085  rm -rf .git
+ 1086  mkdir 1
+ 1087  cd 1/
+ 1088  git init
+ 1089  gh repo clone azakmatov/itlogia-im-backend-edu
+ 1090  snap install gh
+ 1091  gh repo clone azakmatov/itlogia-im-backend-edu
+ 1092  gh auth login
+ 1093  ssh-keygen -t ed25519 -C "azakmatov@gmail.com"
+ 1094  ll /home/iceberg/.ssh/
+ 1095  gh auth login
+ 1096  gh auth logout
+ 1097  gh auth login
+ 1098  gh repo clone azakmatov/itlogia-im-backend-edu
+ 1099  gh auth login
+ 1100  ls -l /home/iceberg/.config/
+ 1101  ls -l /home/iceberg/.config/gh
+ 1102  mkdir /home/iceberg/.config/gh
+ 1103  gh auth login
+ 1104  gh auth login < /home/iceberg/.ssh/token.git 
+ 1105  gh auth login --with-token < /home/iceberg/.ssh/token.git 
+ 1106  git clone git@github.com:azakmatov/itlogia-im-backend-edu.git
+ 1107  ll
+ 1108  cd itlogia-im-backend-edu/
+ 1109  ll
+ 1110  cd ..
+ 1111  git clone git@github.com:azakmatov/itlogia-im-backend-edu.git .
+ 1112  ll
+ 1113  cd ..
+ 1114  rm -r 1/
+ 1115  rm -rf 1/
+ 1116  mkdir 1
+ 1117  cd 1
+ 1118  git clone git@github.com:azakmatov/itlogia-im-backend-edu.git .
+ 1119  ll
+ 1120  ll .git/
+ 1121  cd ../..
+ 1122  ll
+ 1123  mv 1.0.1/ 1-0-1/
+ 1124  mkdir 1.0.1
+ 1125  cd 1.0.1/
+ 1126  ll
+ 1127  ls -la
+ 1128  git clone git@github.com:azakmatov/itlogia-im-backend-edu.git .
+ 1129  ls -la
+ 1130  cd ../1-0-1/
+ 1131  ll
+ 1132  rm -rf 1/
+ 1133  cp -r * ../1.0.1/
+ 1134  cd ../1.0.1/
+ 1135  git status
+ 1136  vi .gitignore
+ 1137  git status
+ 1138  vi .gitignore 
+ 1139  git status
+ 1140  git add .
+ 1141  git commit -m "Initial commit"
+ 1142  git status
+ 1143  git push
+ 1144  vi Dockerfile 
+ 1145  exit
+ 1146  sudo su
+ 1147  cd docker/sources\ of\ images/azakmatov/itlog-im-back-edu-all-in-one-cont\ -\ ubuntu2004/1.0.3\ ssl\ localhost\ authorization/
+ 1148  sudo su
+ 1149  openssl genpkey -algorithm RSA -out ca.key -aes256
+ 1150  openssl req -key ca.key -new -out ca.csr
+ 1151  openssl req -x509 -key ca.key -in ca.csr -out ca.crt -days 36300
+ 1152  openssl req -x509 -key ca.key -in ca.csr -out ca.crt -days 3650
+ 1153  openssl genpkey -algorithm RSA -out mongo.key -aes256
+ 1154  openssl req -key mongo.key -new -out mongo.csr
+ 1155  cd ..
+ 1156  cd itlogia-im-backend
+ 1157  ll
+ 1158  cd 1.0.1\ authorization\ localhost/
+ 1159  ll
+ 1160  sudo su
+ 1161  cd ..
+ 1162  chmod +x mongo-crt.sh 
+ 1163  ./mongo-crt.sh 
+ 1164  sudo su
+ 1165  cd ..
+ 1166  cd itlogia-im-backend
+ 1167  chmod +x create-ca-crt-file.sh 
+ 1168  ./create-ca-crt-file.sh 
+ 1169  sudo su
+ 1170  ./create-ca-crt-file.sh 
+ 1171  sudo su
+ 1172  ./create-ca-crt-file.sh 
+ 1173  touch ca.key ca.crt
+ 1174  ./create-ca-crt-file.sh 
+ 1175  ll
+ 1176  chmod 777 ca.*
+ 1177  ll
+ 1178  ./create-ca-crt-file.sh 
+ 1179  cd 1.0.1\ authorization\ localhost/
+ 1180  cat ca.crt ca.key > mongod-ssl-cert.pem 
+ 1181  sudo su
+ 1182  cd ..
+ 1183  openssl rsa -in mongod.key -out mongod-decrypted.key
+ 1184  openssl rsa -in ca.key -out ca-decrypted.key
+ 1185  cat ca.crt ca-decrypted.key > mongod-ssl-cert.pem
+ 1186  cd 1.0.1\ authorization\ localhost/
+ 1187  openssl x509 -in mongod-ssl-cert.pem -text -noout
+ 1188  sudo su
+ 1189  git push -u origin main
+ 1190  sudo su
+ 1191  sudos u
+ 1192  1
+ 1193  sudo su
+ 1194  cd gb/test/gb-test-spec-block-git/gb-test-spec-block/
+ 1195  history
+ 1196  ll
+ 1197  mv P*.txt DirHumanFriends/
+ 1198  ll
+ 1199  cat DirHumanFriends/Pets.txt 
+ 1200  cat > Pets.txt
+ 1201  cat Pets.txt 
+ 1202  cat > Pets.txt 
+ 1203  cat Pets.txt 
+ 1204  ll DirHumanFriends/PackAnimals.txt 
+ 1205  cat DirHumanFriends/PackAnimals.txt 
+ 1206  cat > PackAnimals.txt
+ 1207  vi PackAnimals.txt
+ 1208  cat Pets.txt PackAnimals.txt > HumanFriends.txt
+ 1209  cat HumanFriends.txt 
+ 1210  vi Pets.txt 
+ 1211  cat Pets.txt PackAnimals.txt > HumanFriends.txt
+ 1212  cat HumanFriends.txt 
+ 1213  vi Pets.txt 
+ 1214  cat Pets.txt PackAnimals.txt > HumanFriends.txt
+ 1215  cat HumanFriends.txt 
+ 1216  mv HumanFriends.txt DirHumanFriends/
+ 1217  cat DirHumanFriends/HumanFriends.txt 
+ 1218  rm DirHumanFriends/P*.txt
+ 1219  ll DirHumanFriends/
+ 1220  sudo dpkt -i /home/iceberg/Загрузки/mysql-apt-config_0.8.33-1_all.deb 
+ 1221  history
+ 1222  sudo apt install mysql-server mysql-client -y
+ 1223  ll /home/iceberg/Загрузки/*.deb
+ 1224  dpkg --help
+ 1225  dpkg -i /home/iceberg/Загрузки/DbSchema_linux_9_6_5.deb 
+ 1226  sudo dpkg -i /home/iceberg/Загрузки/DbSchema_linux_9_6_5.deb 
+ 1227  sudo dpkg -r /home/iceberg/Загрузки/DbSchema_linux_9_6_5.deb 
+ 1228  history
+ 1229  history > AkmatovAzizbeOsmonalievich08feb2025JavaBackend.txt
