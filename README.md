@@ -23,8 +23,8 @@ Final test on the specialization block
 
 Все файлы программы реестра домашних животных находится в директории OOP_Java
 
-На всякий случай покажу структура проекта этой программы выводимой в терминале командой: <pre>tree OOP_Java/
-
+На всякий случай покажу структуру проекта этой программы в трёх способах, выводимой в терминале командой: tree OOP_Java/
+<pre>
 📦OOP_Java
  ┣ 📂animals
  ┃ ┣ 📜Camel.java
@@ -81,6 +81,33 @@ OOP_Java/
     |   +-- PackAnimals.class
     |   +-- Pets.class
     +-- Main.class
+    
+OOP_Java/
+├── animals
+│   ├── Camel.java
+│   ├── Cat.java
+│   ├── Dog.java
+│   ├── Donkey.java
+│   ├── Hamster.java
+│   └── Horse.java
+├── base
+│   ├── Animal.java
+│   ├── PackAnimals.java
+│   └── Pets.java
+├── Main.java
+└── out
+    ├── animals
+    │   ├── Camel.class
+    │   ├── Cat.class
+    │   ├── Dog.class
+    │   ├── Donkey.class
+    │   ├── Hamster.class
+    │   └── Horse.class
+    ├── base
+    │   ├── Animal.class
+    │   ├── PackAnimals.class
+    │   └── Pets.class
+    └── Main.class
 
 5 directories, 20 files
 
