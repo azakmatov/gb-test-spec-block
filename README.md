@@ -25,33 +25,32 @@ Final test on the specialization block
 
 На всякий случай покажу структура проекта этой программы выводимой в терминале командой: tree OOP_Java/
 
-OOP_Java/
-|
-+-- _animals
-|   +-- Camel.java
-|   +-- Cat.java
-|   +-- Dog.java
-|   +-- Donkey.java
-|   +-- Hamster.java
-|   +-- Horse.java
-+-- _base
-|   +-- Animal.java
-|   +-- PackAnimals.java
-|   +-- Pets.java
-+-- Main.java
-|-- _out
-    +-- _animals
-    |   +-- Camel.class
-    |   +-- Cat.class
-    |   +-- Dog.class
-    |   +-- Donkey.class
-    |   +-- Hamster.class
-    |   +-- Horse.class
-    +-- _base
-    |   +-- Animal.class
-    |   +-- PackAnimals.class
-    |   +-- Pets.class
-    +-- Main.class
+📦OOP_Java
+ ┣ 📂animals
+ ┃ ┣ 📜Camel.java
+ ┃ ┣ 📜Cat.java
+ ┃ ┣ 📜Dog.java
+ ┃ ┣ 📜Donkey.java
+ ┃ ┣ 📜Hamster.java
+ ┃ ┗ 📜Horse.java
+ ┣ 📂base
+ ┃ ┣ 📜Animal.java
+ ┃ ┣ 📜PackAnimals.java
+ ┃ ┗ 📜Pets.java
+ ┣ 📂out
+ ┃ ┣ 📂animals
+ ┃ ┃ ┣ 📜Camel.class
+ ┃ ┃ ┣ 📜Cat.class
+ ┃ ┃ ┣ 📜Dog.class
+ ┃ ┃ ┣ 📜Donkey.class
+ ┃ ┃ ┣ 📜Hamster.class
+ ┃ ┃ ┗ 📜Horse.class
+ ┃ ┣ 📂base
+ ┃ ┃ ┣ 📜Animal.class
+ ┃ ┃ ┣ 📜PackAnimals.class
+ ┃ ┃ ┗ 📜Pets.class
+ ┃ ┗ 📜Main.class
+ ┗ 📜Main.java
 
 5 directories, 20 files
 
