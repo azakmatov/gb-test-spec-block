@@ -23,7 +23,7 @@ Final test on the specialization block
 
 Все файлы программы реестра домашних животных находится в директории OOP_Java
 
-На всякий случай покажу структура проекта этой программы выводимой в терминале командой: '''tree
+На всякий случай покажу структура проекта этой программы выводимой в терминале командой: ```tree
 .
 ├── animals
 │   ├── Camel.java
@@ -51,7 +51,7 @@ Final test on the specialization block
     │   └── Pets.class
     └── Main.class
 
-5 directories, 20 files'''
+5 directories, 20 files```
 
 Здесь, для наглядности структуры проекта в терминале я собирал это добро командой: javac -d out base/*.java animals/*.java Main.java 
 Поэтому для запуска этой программы в директории OOP_Java выполняем команду: java -cp out Main
