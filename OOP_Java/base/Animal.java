@@ -1,28 +1,31 @@
 package base;
+import java.time.LocalDate;  // Импортируем LocalDate
 import java.util.*;
 
 // 📌 Базовый класс "Animal" (Животное)
 public abstract class Animal {
-    String name;         // Имя животного
-    String birthDate;    // Дата рождения животного
+    private String name;         // Имя животного
+    private LocalDate birthDate; // Дата рождения животного теперь LocalDate
     private static int count = 0;  // Общий счётчик всех созданных животных
-    Map<String, Runnable> commandsMap = new HashMap<>(); // Словарь команд с их действиями
+    private Map<String, Runnable> commandsMap = new HashMap<>(); // Словарь команд с их действиями
 
-    public Animal(String name, String birthDate) {
+    // 📅 Конструктор с LocalDate для даты рождения
+    public Animal(String name, LocalDate birthDate) {
         this.name = name;
         this.birthDate = birthDate;
         count++;
     }
 
-    String getType() {
-        return "The " + this.getClass().getSimpleName();
+    private String getType() {
+        return "The " + this.getClass().getSimpleName().toLowerCase();
     }
 
     @Override
     public String toString() {
-        return getType() + " " + name + " (Born: " + birthDate + ")";
+        return this.getType() + " " + this.name + " (borned: " + birthDate + ")";
     }
 
+    // 📚 Метод для обучения команды
     public void learnCommand(String command, Runnable action) {
         if (!commandsMap.containsKey(command)) {
             commandsMap.put(command, action);
@@ -32,6 +35,7 @@ public abstract class Animal {
         }
     }
 
+    // 📜 Метод для отображения всех команд
     public void showCommands() {
         if (commandsMap.isEmpty()) {
             System.out.println(this + " doesn't know any commands yet.");
@@ -40,7 +44,7 @@ public abstract class Animal {
         }
     }
 
-    // Исправленный метод для выполнения команды
+    // 🔄 Метод для выполнения команды
     public void executeCommand(String command) {
         System.out.println("Trying to execute command: " + command);
         if (commandsMap.containsKey(command)) {
@@ -53,10 +57,12 @@ public abstract class Animal {
         }
     }
 
-    public String getBirthDate() {
+    // 📅 Метод для получения даты рождения
+    public LocalDate getBirthDate() {
         return this.birthDate;
     }
 
+    // 🔢 Метод для получения общего количества животных
     public static int getTotalCount() {
         return count;
     }

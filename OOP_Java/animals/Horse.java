@@ -1,7 +1,8 @@
 package animals;
+import java.time.LocalDate;
 import base.PackAnimals; // 2️⃣ Импортируем родительский класс из пакета "base"
 public class Horse extends PackAnimals {
-    public Horse(String name, String birthDate) {
+    public Horse(String name, LocalDate birthDate) {
         super(name, birthDate);
     }
 }
